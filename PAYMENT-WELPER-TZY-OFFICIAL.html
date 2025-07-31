@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment | Welper-Tzy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: url('https://files.catbox.moe/vb3hqn.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #ff0000;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.75);
+      min-height: 100vh;
+    }
+
+    .logo {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .scroll-text {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+
+    .scroll-text span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-right 10s linear infinite;
+      font-size: 1.3em;
+      color: #ff4b4b;
+      letter-spacing: 2px;
+      text-shadow: 0 0 5px #ff0000;
+    }
+
+    @keyframes scroll-right {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .payment-list h2 {
+      margin-top: 30px;
+      color: #ffffff;
+      animation: flicker 1.5s infinite alternate;
+    }
+
+    @keyframes flicker {
+      from { opacity: 1; }
+      to { opacity: 0.6; }
+    }
+
+    .payment-list button {
+      display: block;
+      margin: 10px auto;
+      background: #ff0000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 10px;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .payment-list button:hover {
+      background: #b30000;
+    }
+
+    .qr {
+      margin: 20px auto;
+    }
+
+    .qr img {
+      width: 150px;
+      border: 2px solid #ff0000;
+      border-radius: 10px;
+    }
+
+    .contact-note {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #aaaaaa;
+    }
+
+    .contact-links a,
+    .youtube-link a {
+      display: block;
+      margin: 10px auto;
+      background: #1a1a1a;
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      width: fit-content;
+    }
+
+    .contact-links a:hover,
+    .youtube-link a:hover {
+      background: #333;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay hidden>
+    <source src="https://files.catbox.moe/lchexz.m4a" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <img src="https://files.catbox.moe/vb3hqn.png" alt="Logo" class="logo" />
+
+    <div class="scroll-text">
+      <span>🖤WELCOME TO PAYMENT BY WELPER-TZY OFFICIAL 🖤</span>
+    </div>
+
+    <div class="payment-list">
+      <h2>💳 PAYMENT BY WELPER-TZY OFFICIAL 💳</h2>
+      <button onclick="copyText('083838681020')">📲 Salin DANA: 083838681020</button>
+      <button onclick="copyText('083838681020')">💰 Salin GOPAY: 083838681020</button>
+      <button onclick="copyText('083838681020')">📱 Salin OVO: 083838681020</button>
+    </div>
+
+    <div class="qr">
+      <p style="color: #fff;">🔻 QR CODE 🔻</p>
+      <img src="https://files.catbox.moe/vb3hqn.png" alt="QR CODE">
+      <br><br>
+      <button onclick="copyText('https://files.catbox.moe/vb3hqn.png')">🔗 Salin Link QR</button>
+    </div>
+
+    <div class="contact-note">
+      <p>© sᴜᴅᴀʜ ᴛғ ᴋɪʀɪᴍ ʙᴜᴋᴛɪ ᴋᴇ WA / TELE</p>
+    </div>
+
+    <div class="contact-links">
+      <a href="https://wa.me/6283899250559" target="_blank">📲 ᴡʜᴀᴛsᴀᴘᴘ</a>
+      <a href="https://t.me/Welperrtzy" target="_blank">💬 ᴛᴇʟᴇɢʀᴀᴍ</a>
+    </div>
+
+    <div class="youtube-link">
+      <a href="https://youtube.com/@welper-tzy_official" target="_blank"> 📷ʏᴏᴜᴛᴜʙᴇ ᴡᴇʟᴘᴇʀ ᴊᴀɴɢᴀɴ ʟᴜᴘᴀ sᴜʙʀᴇᴋ l</a>
+    </div>
+
+    <footer>
+      <p>ᴛᴇʀɪᴍᴀᴋᴀꜱɪʜ ᴛᴇʟᴀʜ ᴘᴀᴋᴇ ᴊᴀꜱᴀ ᴋᴀᴍɪ — 100% ᴀᴍᴀɴ & ʙᴀʟɪᴋ ʟᴀɢɪ</p>
+      <p>sᴀʟᴀᴍ ᴄᴜᴀɴ 💸</p>
+    </footer>
+  </div>
+
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Disalin: " + text);
+      }).catch(err => {
+        alert("Gagal salin: " + err);
+      });
+    }
+  </script>
+</body>
+</html>
